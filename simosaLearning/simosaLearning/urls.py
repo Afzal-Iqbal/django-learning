@@ -23,4 +23,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('simosa/', include('simosa.urls')), # transferrrign control to another app
+
+
+    path("__reload__/", include("django_browser_reload.urls")), # for relaoding not for production
 ]
